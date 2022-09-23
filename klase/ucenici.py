@@ -1,24 +1,18 @@
-class Ucenik:
-    def __init__(self, ime, prezime, OIB, godina, razred):
-        '''klasa Ucenik kreira objekt s imenom, prezimenom, OIB-om, te školskom godinom i razredom koji učenik pohađa u toj godini'''
-        self.i=ime
-        self.p=prezime
-        self.OIB=OIB
-        self.g=godina
-        self.r=razred
-    def __repr__(self):
-        return 'ime prezime:'+self.i+' '+self.p
-    def __str__(self):
-        return self.__repr__()
+class Ploca:
+    def __init__(self, velx,vely):
+        '''klasa Ploca...'''
+        self.vx=velx
+        self.vy=vely
 
-class Ponavljac(Ucenik):
-    def __init__(self, ime, prezime, OIB, razred, godina, br_pon):
-        '''nasljeđuje klasu Ucenik, ali dodaje svojstvo broj ponavljanja'''
+
+class Sah(Ploca):
+    def __init__(self, velx, vely, oznakex,oznakey):
+        '''nasljeđuje klasu Ploca...'''
         pass
         #ključna riječ pass se često koristi kao oznaka nulte operacije te čuva mjesto
 
 
-class Maturant(Ucenik):
-    def __init__(self, ime, prezime, OIB, razred, matura):
-        '''nasljeđuje klasu Ucenik, ali dodaje rječnik matura koji ima oblik {'naziv predmeta na maturi':'razina A ili B'}'''
+class PotapanjeBrodova(Ploca):
+    def __init__(self, velx,vely, oznakex, oznakey):
+        '''nasljeđuje klasu Ploca...'''
         pass
